@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { PostCreateComponent } from './posts/post-create/post-create.component';
 import { FormsModule } from '@angular/forms';
@@ -9,7 +8,7 @@ import { MatInputModule, MatCardModule, MatButtonModule, MatToolbarModule, MatEx
 import { HeaderComponent } from './header/header.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
     PostListComponent
   ],
   imports: [
+    RouterModule,
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
